@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Quick Tables</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/angular/angular.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Tables</h1>
+        <div ng-app="app" ng-controller="tableController as vm">
+            <json-table headings="vm.columns" contents="vm.results"></json-table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="release/jsonTable.min.js"></script>
+</body>
+</html>
