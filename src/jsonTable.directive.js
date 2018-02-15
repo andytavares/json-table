@@ -3,7 +3,7 @@ angular.module('jsonTable')
         var ctrl = ['$scope', function($scope) {
             var vm =  this;
         }];
-        var template =  '<table class="table table-striped" headings="vm.headings" contents="vm.contents" json-table-contents></table>';
+        var template =  '<table class="table table-hover" headings="vm.headings" contents="vm.contents" json-table-contents></table>';
         return {
             restrict: 'E',
             scope: {

@@ -9,8 +9,8 @@ angular.module('jsonTable')
             controller: function() {
                 var vm = this;
             },
-            template: '<json-table-heading headings="vm.headings"></json-table-heading>' +
-                      '<json-table-body contents="vm.contents" headings="vm.headings"></json-table-body>',
+            template: '<json-table-heading headings="vm.headings" order-by="vm.orderBy" reverse-order="vm.reverseOrder"></json-table-heading>' +
+                      '<json-table-body contents="vm.contents" headings="vm.headings" order-by="vm.orderBy" reverse-order="vm.reverseOrder"></json-table-body>',
             controllerAs: 'vm',
             bindToController: true
         }
