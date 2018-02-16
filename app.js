@@ -2,9 +2,9 @@ angular.module('app', ['jsonTable'])
     .controller('tableController', function() {
         var vm = this;
         vm.columns = [
-            { field: "id", label:"ID", type: 'link',  sortable: true, route: 'edit/'},
+            { field: "id", label:"ID", type: 'link', sortable: true, route: 'edit/' },
             { field: "date", label:"Date", type: 'date' },
-            { field: "fname", sortable: true, label:"First Name", type: 'text' },
+            { field: "fname", label:"First Name", type: 'text', sortable: true},
             { field: "lname", label:"Last Name", type: 'text' },
             { field: "active", label:"Active", type: 'checkbox' },
             { label: "Actions", type: 'actions', actions: [

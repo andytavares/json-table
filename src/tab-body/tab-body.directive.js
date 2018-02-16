@@ -15,7 +15,7 @@ angular.module('jsonTable')
         '<tr ng-repeat="row in vm.contents | orderBy:vm.orderBy:vm.reverseOrder">' +
           '<td ng-repeat="heading in vm.headings">' +
             '<span ng-if="heading.type === \'text\'">{{ row[heading.field] }}{{heading.filterParam}}</span>' +
-            '<span ng-if="heading.type === \'date\'">{{ vm.filterDate(row[heading.field]) }}</span>' +
+            '<span ng-if="heading.type === \'date\'">{{ vm.filterDate(row[heading.field], heading.filterParam) }}</span>' +
             '<span ng-if="heading.type === \'link\'"><a ng-href="{{heading.route}}{{row[heading.field]}}">{{ row[heading.field] }}</a></span>' +
             '<span ng-if="heading.type === \'checkbox\'"><input type="checkbox" ng-model="row[heading.field]"></input></span>' +
             '<span ng-if="heading.type === \'actions\'">' +
