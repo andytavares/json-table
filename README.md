@@ -13,18 +13,19 @@ Bootstrap 3.3.7 (optional) It will work with out it, but it'll look terrible.
 JSON Table can be added to any page using the `<json-table headings="(table heading config)" contents="(table contents)"></json-table>` element.
 
 The directive uses the heading configuration to manage how the data should be represented. The heading configuration array is as follows:
-```json
+```
 [
     {
-        field: string - optional,
-        label: string - optional,
-        type: string - required,
-        sortable: boolean - optional
-        route: string - required when 'type = link',
-        actions: array - required when 'type = actions'
+        field: string       (optional),
+        label: string       (optional),
+        type: string        (required),
+        sortable: boolean   (optional)
+        route: string       (required when 'type = link'),
+        actions: array      (required when 'type = actions')
     }, ...
 ]
 ```
+----
 
 `field:` - optional
 
